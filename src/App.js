@@ -1,11 +1,12 @@
 import React from 'react'
 import GameBoard from './Components/GameBoard'
+// import Test from './Components/Test'
 
 const App = () => {
   return (
-    <div>
+    <>
       <GameBoard />
-    </div>
+    </>
   )
 }
 

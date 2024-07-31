@@ -6,7 +6,7 @@
 
 .container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: black;
   display: grid;
   place-items: center;
@@ -27,6 +27,43 @@
   font-size: 18px;
   text-transform: uppercase;
 }
+
+.game-info.active {
+  background-color: green;
+}
+
+.btn {
+  color: black;
+  position: absolute;
+  /* left: 50%; */
+  bottom: 3rem;
+  /* transform: translateX(-50%); */
+  background-color: white;
+  border-radius: 1rem;
+  border: 3px solid yellow;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  animation: zoom-in-zoom-out 3s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.75, 0.75);
+  }
+  50% {
+    transform: scale(1.25, 1.25);
+    background-color: #7dfffb;
+  }
+  100% {
+    transform: scale(0.75, 0.75);
+  }
+}
+/* 
+.btn.active {
+  display: flex;
+} */
 
 .tic-tac-toe {
   width: 90%;
